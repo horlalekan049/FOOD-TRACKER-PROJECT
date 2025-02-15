@@ -6,6 +6,7 @@ import Register from './pages/Register';
 import mainRoutes from './routes';
 import Page404 from './pages/Page404';
 import MainLayout from './layouts/MainLayout';
+import Home2 from './pages/Home2';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -15,6 +16,7 @@ const App = () => {
       element: <MainLayout />,
       errorElement: <Page404 />,
     },
+    { path: 'Home2', element: <Home2/> },
     { path: '/register', element: <Register/> },
     { path: '/login', element: <Login /> },
   ]);

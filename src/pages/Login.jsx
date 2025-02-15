@@ -44,7 +44,12 @@ const Login = () => {
   }
 
   return (
-    <div className='w-screen h-screen flex flex-col justify-center items-center py-20'>
+    <div className='w-screen h-screen flex '>
+      <div className='w-1/2 h-full bg-[url("https://images.pexels.com/photos/323682/pexels-photo-323682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] flex justify-center items-center bg-no-repeat bg-center bg-cover'>
+        
+      </div>
+
+      <div className='w-1/2 h-full flex pl-20 items-center'>
       <div className='flex flex-col gap-3 rounded-md p-8 shadow-lg w-[300px]'>
         <img src={HouseImage} alt='leaf logo' className='block mx-auto w-7 h-6' />
         <p className=' text-lg text-center font-bold'>Login to FreshTrack</p>
@@ -74,10 +79,10 @@ const Login = () => {
           Login
         </button>
 
-        <button className='border rounded-md h-8 text-sm border-gray-200 flex gap-5 items-center justify-center'>
-          <FaGoogle />
-          <span>Login with Google</span>
-        </button>
+
+
+
+
 
         <p className='text-gray-500 text-sm mx-auto'>
           Don't have an account?&nbsp;
@@ -85,7 +90,7 @@ const Login = () => {
             Sign up
           </Link>
         </p>
-      </div>
+      </div></div>
     </div>
   );
 };
